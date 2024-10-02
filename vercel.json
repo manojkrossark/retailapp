@@ -1,10 +1,5 @@
 {
-    "functions": {
-    "api/**/*.py": {
-       "runtime": "now-python@3.12"
-    }
-  },
-    "rewrites": [
+      "rewrites": [
         { "source": "/(.*)", "destination": "/api/index" }
     ]
 }
