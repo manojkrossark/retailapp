@@ -12,6 +12,10 @@ genai.configure(api_key='AIzaSyDUUsTEvKKRya7u46jEJw4OMwFZ3dRKIRs')
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def hello():
+    return 'Hello, world'
+    
 # Database connection function
 def get_db_connection():
     conn = psycopg2.connect(
